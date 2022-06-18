@@ -1,16 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+@extends('layout')
+@section('content')
     <h1>Create a New Projects</h1>
     <form action="/projects" method="POST">
         {{ csrf_field() }}
-        <input type="text" name="title" placeholder="Project Title">
-        <input type="text" name="description" placeholder="Project Description">
-        <button type="submit">Create Project</button>
+        <input type="text" class="form-control" name="title" placeholder="Project Title" required>
+        <input type="text" class="form-control" name="description" placeholder="Project Description" required>
+        <button type="submit" class="btn btn-primary">Create Project</button>
     </form>
-
-</body>
-</html>
+    <div class="notification is-danger">
+        @if($errors->any())
+            <ul>
+                @foreach($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        @endif
+    </div>
+@endsection
