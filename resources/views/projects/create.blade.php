@@ -8,12 +8,6 @@
         <button type="submit" class="btn btn-primary">Create Project</button>
     </form>
     <div class="notification is-danger">
-        @if($errors->any())
-            <ul>
-                @foreach($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        @endif
+    @include ('errors.errors')
     </div>
 @endsection

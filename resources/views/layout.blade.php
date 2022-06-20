@@ -7,6 +7,11 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <style>
+      .is-complete {
+        text-decoration: line-through;
+      }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-light">
@@ -22,6 +27,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/projects/create">Create</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/projects">Projects</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/contact">Contact</a>
