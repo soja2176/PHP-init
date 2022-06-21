@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.app')
 @section('content')
 <h1>Edit Project</h1>
 <form method="POST" action="/projects/{{ $project->id }}">
