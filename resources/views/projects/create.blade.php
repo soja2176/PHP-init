@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.app')
 @section('content')
     <h1>Create a New Projects</h1>
     <form action="/projects" method="POST">

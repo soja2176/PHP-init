@@ -26,3 +26,14 @@ Route::get('/about', 'App\Http\Controllers\PagesController@about')->name('about'
 Route::get('/contact', 'App\Http\Controllers\PagesController@contact')->name('contact');
 Route::patch('/task/{task}', 'App\Http\Controllers\ProjectTasksController@update');
 Route::post('/projects/{project}/tasks', 'App\Http\Controllers\ProjectTasksController@store');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
