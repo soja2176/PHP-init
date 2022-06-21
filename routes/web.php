@@ -27,13 +27,5 @@ Route::get('/contact', 'App\Http\Controllers\PagesController@contact')->name('co
 Route::patch('/task/{task}', 'App\Http\Controllers\ProjectTasksController@update');
 Route::post('/projects/{project}/tasks', 'App\Http\Controllers\ProjectTasksController@store');
 Auth::routes();
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

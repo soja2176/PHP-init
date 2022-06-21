@@ -4,8 +4,7 @@
 
 @section('content')
 
-    <h1>Welcome to my {{ $foo }}</h1>
-
+<h1>{{ Auth::check() ? 'Welcome ' . Auth::user()->name : 'Welcome guest' }}</h1>
 <ul>
 
     @foreach ($tasks as $task)
